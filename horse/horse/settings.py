@@ -19,22 +19,22 @@ NEWSPIDER_MODULE = 'horse.spiders'
 #USER_AGENT = 'horse (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+#ROBOTSTXT_OBEY = True
 
-MYSQL_HOST='192.168.0.7'
-MYSQL_USER='root'
+#MYSQL_HOST='192.168.0.7'
+#MYSQL_USER='root'
 
 #数据库的密码
-MYSQL_PASSWORD='xujixcc'
-MYSQL_PORT =3306
+#MYSQL_PASSWORD='xujixcc'
+#MYSQL_PORT =3306
 
 #数据库的名称
-MYSQL_DB='horse'
-CHARSET='UTF8'
+#MYSQL_DB='horse'
+#CHARSET='UTF8'
 
-ITEM_PIPELINES = {
-     'horse.pipelines.HorsePipeline': 300,
-}
+#ITEM_PIPELINES = {
+#     'horse.pipelines.HorsePipeline': 300,
+#}
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -79,9 +79,9 @@ ITEM_PIPELINES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'horse.pipelines.HorsePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'horse.pipelines.HorsePipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
