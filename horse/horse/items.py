@@ -13,13 +13,13 @@ class HorseItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     # 比赛时间以及场地
-    horse_date = scrapy.Field()
+    HORSE_DATE = scrapy.Field()
     # 名次
     mingci_id = scrapy.Field()
     # 马号
     horse_id = scrapy.Field()
     # 马名
-    horse_name = scrapy.Field()
+    HORSE_NAME = scrapy.Field()
     # 骑师姓名
     reinsman_name = scrapy.Field()
     # 驯马师姓名
